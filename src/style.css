@@ -94,6 +94,10 @@ li {
   font-weight: 100;
 }
 
+.font-normal {
+  font-size: 16px;
+}
+
 .todo-container {
   width: 80%;
   margin-top: 5%;
@@ -105,6 +109,7 @@ li {
   border: none;
   width: 100%;
   display: block;
+  font-size: 18px;
   font-style: italic;
   border-bottom: 1px solid var(--gray);
 }
@@ -117,6 +122,11 @@ li {
   outline: 0;
   content: 0;
   margin-top: -5px;
+}
+
+.todo-container input[type="text"]:disabled {
+  border: none;
+  background-color: var(--white);
 }
 
 .todo-container input[type=checkbox]:before {
