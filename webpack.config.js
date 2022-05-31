@@ -10,6 +10,10 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist'),
     },
+    open: true,
+    compress: true,
+    port: 9000,
+    hot: false,
   },
   plugins: [
     new HtmlWebpackPlugin({
