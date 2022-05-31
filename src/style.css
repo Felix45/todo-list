@@ -118,7 +118,6 @@ li {
   cursor: pointer;
   -moz-appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
   outline: 0;
   content: 0;
   margin-top: -5px;
@@ -129,8 +128,8 @@ li {
   background-color: var(--white);
 }
 
-.todo-container input[type=checkbox]:before {
-  font-family: "FontAwesome";
+.todo-container input[type=checkbox]::before {
+  font-family: "FontAwesome", sans-serif;
   content: "\f00c";
   font-size: 15px;
   color: transparent !important;
@@ -142,10 +141,10 @@ li {
   margin-right: 7px;
 }
 
-.todo-container input[type=checkbox]:checked:before {
+.todo-container input[type=checkbox]:checked::before {
   color: var(--gray) !important;
 }
 
 .todo-container ul li {
-  border-bottom: 1px solid var(--gray)
+  border-bottom: 1px solid var(--gray);
 }
