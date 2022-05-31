@@ -7,8 +7,23 @@
     <title>Webpack Excercise</title>
 </head>
 <body>
-    <main>
-      <h1>Hello Webpack</h1>
+    <main class="d-flex flex-center">
+      <section class="todo-container d-flex flex-column flex-center mt-2">
+          <h1 class="d-flex space-between p-2 title">Today's To Do <span class="fa fa-refresh"></span></h1>
+          
+        <form method="post" action="index.html">
+          <div class="d-flex space-between">
+            <input type="text" name="todo" id="todo" placeholder="Add to your list ..." class="p-2" />
+            <span class="fa fa-level-down"></span>
+          </div>
+        </form>
+        <ul class="todo-list">
+
+        </ul>
+        <div class="bg-light text-center p-2">
+          Clear all completed
+        </div>
+      </section>
     </main>
 </body>
 </html>
