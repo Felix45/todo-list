@@ -5,19 +5,20 @@
   "private": "true",
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Felix45/awsome-books-v2.git"
+    "url": "git+https://github.com/Felix45/todo-list.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Felix45/awsome-books-v2/issues"
+    "url": "https://github.com/Felix45/todo-list/issues"
   },
-  "homepage": "https://github.com/Felix45/awsome-books-v2#readme",
+  "homepage": "https://felix45.github.io/todo-list/",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
@@ -38,6 +39,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "live-server": "^1.2.2",
     "lodash": "^4.17.21"
   }
