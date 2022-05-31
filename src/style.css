@@ -10,6 +10,7 @@
   --gray: #ddd;
   --light: #fafafa;
   --white: #fff;
+  --dark: #000;
 }
 
 ul,
@@ -54,12 +55,27 @@ li {
 }
 
 .svg-inline--fa {
+  cursor: pointer;
   color: var(--gray);
+}
+
+.svg-inline--fa:hover {
+  color: var(--dark);
 }
 
 .svg-inline--fa.fa-arrows-rotate,
 .svg-inline--fa.fa-arrow-turn-down {
   transform: rotate(90deg);
+}
+
+.svg-inline--fa.fa-arrow-turn-down {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.pos-rel {
+  position: relative;
 }
 
 .desc {
@@ -94,6 +110,7 @@ li {
 }
 
 .todo-container input[type="checkbox"] {
+  cursor: pointer;
   -moz-appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
