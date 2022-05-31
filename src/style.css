@@ -1,3 +1,124 @@
-body {
-  background-color: bisque;
+@import url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --gray: #ddd;
+  --light: #fafafa;
+  --white: #fff;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.px-0 {
+  padding-left: 0;
+}
+
+.px-1 {
+  padding-left: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.svg-inline--fa {
+  color: var(--gray);
+}
+
+.svg-inline--fa.fa-arrows-rotate,
+.svg-inline--fa.fa-arrow-turn-down {
+  transform: rotate(90deg);
+}
+
+.desc {
+  width: 100%;
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-weight: 100;
+}
+
+.todo-container {
+  width: 80%;
+  margin-top: 5%;
+  border: 1px solid var(--gray);
+  box-shadow: 5px 5px 5px var(--gray), -5px -5px 5px var(--gray);
+}
+
+.todo-container form input[type="text"] {
+  border: none;
+  width: 100%;
+  display: block;
+  font-style: italic;
+  border-bottom: 1px solid var(--gray);
+}
+
+.todo-container input[type="checkbox"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0;
+  content: 0;
+  margin-top: -5px;
+}
+
+.todo-container input[type=checkbox]:before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  font-size: 15px;
+  color: transparent !important;
+  background-color: var(--white);
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid var(--gray);
+  margin-right: 7px;
+}
+
+.todo-container input[type=checkbox]:checked:before {
+  color: var(--gray) !important;
+}
+
+.todo-container ul li {
+  border-bottom: 1px solid var(--gray)
 }
