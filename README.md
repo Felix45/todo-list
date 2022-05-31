@@ -25,9 +25,9 @@ To get a local copy up and running follow these simple example steps.
 Clone the repository and change the directory to webpack-boilerplate
 
 ``` 
-  $ git clone git@github.com:Felix45/webpack-boilerplate.git
+  $ git clone git@github.com:Felix45/todo-list.git
 
-  $ cd webpack-boilerplate
+  $ cd todo-list
 
 ```
 
@@ -58,7 +58,7 @@ Start the http application server
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Felix45/webpack-boilerplate/issues).
+Feel free to check the [issues page](https://github.com/Felix45/todo-list/issues).
 
 ## Show your support
 
