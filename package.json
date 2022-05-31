@@ -5,9 +5,9 @@
   "private": "true",
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve --open",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
