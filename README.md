@@ -1,9 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Webpack Boilerplate
+# Todo list
 
-> This is boilerplate setup for setting up webpack in a project
-
+> This is a simple web app that allows users of the application to add and remove tasks they plan to do during the day.
 
 ## Built With
 
