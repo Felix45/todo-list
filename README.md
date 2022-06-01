@@ -44,11 +44,11 @@ Install all project dependencies by running the command below
 ### Usage
 Start the http application server
 ``` 
-  $ http-server
+  $ npm start
 ```
 
 ### Deployment
-- [Visit Application Homepage](http://localhost:8080)
+- [Visit Application Homepage](http://localhost:9000)
 
 
 ### Authors
