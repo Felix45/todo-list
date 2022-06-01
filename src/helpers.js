@@ -40,10 +40,6 @@ class Helper {
       editFields.forEach((editField) => editField.addEventListener('change', (event) => {
         Helper.editCommon(event, taskstore);
       }));
-
-      editFields.forEach((editField) => editField.addEventListener('blur', (event) => {
-        Helper.editCommon(event, taskstore);
-      }));
     };
 
     static editTextHandler = () => {
