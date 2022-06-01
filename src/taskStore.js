@@ -8,6 +8,24 @@ class TaskStore {
     this.populateLocalStorage();
   }
 
+  removeTask = (deleteItems) => {
+    this.tasks = this.getTasks().filter((task) => {
+      if(!deleteItems.includes(task.index)){
+        return task;
+      }
+    });
+    this.regenerateTaskIds();
+    this.populateLocalStorage();
+    this.printTodoList();
+  }
+
+  regenerateTaskIds = () => {
+    this.tasks = this.getTasks().map((task, index) => {
+      task.index = index + 1;
+      return task;
+    });
+  }
+
   getTasks = () => {
     return this.tasks;
   }
