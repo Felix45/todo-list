@@ -19,18 +19,30 @@ class Helper {
       });
     };
 
+    static editCommon = (event, taskstore) => {
+      const id = parseInt(event.target.getAttribute('data-pos'), 10);
+      const data = event.target.value;
+      taskstore.editTask({ id, data });
+      event.target.disabled = true;
+      event.target.parentNode.querySelector('.edit-desc').classList.toggle('d-none');
+    }
+
     static editElipsisHandler = (taskstore) => {
       const editFields = document.querySelectorAll('.desc');
 
       editFields.forEach((editField) => editField.addEventListener('keypress', (event) => {
-        if (event.key === 'Enter' && event.target.value !== '') {
+        if (event.key === 'Enter') {
           event.preventDefault();
-          const id = parseInt(event.target.getAttribute('data-pos'), 10);
-          const data = event.target.value;
-          taskstore.editTask({ id, data });
-          event.target.disabled = true;
-          event.target.parentNode.querySelector('.edit-desc').classList.toggle('d-none');
+          Helper.editCommon(event, taskstore);
         }
+      }));
+
+      editFields.forEach((editField) => editField.addEventListener('change', (event) => {
+        Helper.editCommon(event, taskstore);
+      }));
+
+      editFields.forEach((editField) => editField.addEventListener('blur', (event) => {
+        Helper.editCommon(event, taskstore);
       }));
     };
 

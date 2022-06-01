@@ -23,7 +23,7 @@ class TaskStore {
 
   editTask = ({ id, data }) => {
     this.tasks = this.getTasks().map((task) => {
-      if (task.index === id) task.description = data;
+      if (task.index === id && data !== '') task.description = data;
       return task;
     });
     this.populateLocalStorage();
