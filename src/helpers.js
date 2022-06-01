@@ -1,12 +1,11 @@
 class Helper {
-
     static checkBoxHandler = (taskstore) => {
       const checkBox = document.querySelectorAll('input[type=checkbox]');
       checkBox.forEach((box) => {
         box.addEventListener('change', (event) => {
           const task = event.target.parentNode.querySelector('.desc');
           task.classList.toggle('line-through');
-          taskstore.setTaskStaus(parseInt(event.target.id) - 1, 10);
+          taskstore.setTaskStaus(parseInt(event.target.id, 10) - 1);
         });
       });
     };
@@ -35,7 +34,7 @@ class Helper {
       }));
     };
 
-    static editTextHandler = (taskstore) => {
+    static editTextHandler = () => {
       const textFields = document.querySelectorAll('.edit-desc');
       const editFields = document.querySelectorAll('.desc');
 

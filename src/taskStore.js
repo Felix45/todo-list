@@ -1,4 +1,4 @@
-import Helper from "./helpers.js";
+import Helper from './helpers.js';
 
 class TaskStore {
   constructor() {
@@ -11,11 +11,8 @@ class TaskStore {
   }
 
   removeTask = (clear = false, itemIndex = -1) => {
-    
-    if(clear) {
-      this.tasks = this.getTasks().filter((task) => {
-        return task.completed === false;
-      });
+    if (clear) {
+      this.tasks = this.getTasks().filter((task) => task.completed === false);
     }
     if (itemIndex > 0) this.tasks.splice(itemIndex - 1, 1);
 
@@ -41,7 +38,7 @@ class TaskStore {
   }
 
   setTaskStaus = (updateIndex) => {
-    if(this.tasks[updateIndex].completed) {
+    if (this.tasks[updateIndex].completed) {
       this.tasks[updateIndex].completed = false;
     } else {
       this.tasks[updateIndex].completed = true;
@@ -56,19 +53,19 @@ class TaskStore {
     listContainer.innerHTML = '';
     this.getTasks().forEach((todo) => {
       listContainer.innerHTML += `<li class='d-flex p-2'>
-        <input type='checkbox' id=${todo.index} ${ todo.completed ? 'checked': ''}/>
-        <input type='text' class='desc font-normal px-1 ${ todo.completed ? 'line-through': ''}' data-pos='${todo.index}' 
+        <input type='checkbox' id=${todo.index} ${todo.completed ? 'checked' : ''}/>
+        <input type='text' class='desc font-normal px-1 ${todo.completed ? 'line-through' : ''}' data-pos='${todo.index}' 
         value='${todo.description}' disabled/>
         <span class='edit-desc fa fa-ellipsis-v'></span>
         <span class='d-none fa fa-trash mx-1 btnDelete' data-index=${todo.index}></span>
       </li>`;
     });
 
-    if (this.getTasks().length > 0) { 
+    if (this.getTasks().length > 0) {
       Helper.checkBoxHandler(this);
       Helper.deleteButtonsHandler(this);
       Helper.editElipsisHandler(this);
-      Helper.editTextHandler(this);
+      Helper.editTextHandler();
     }
   }
 
