@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Webpack Excercise</title>
 </head>
 <body>
@@ -13,14 +14,14 @@
           
         <form method="post" action="index.html">
           <div class="d-flex space-between pos-rel">
-            <input type="text" name="todo" id="todo" placeholder="Add to your list ..." class="p-2" />
-            <span class="fa fa-level-down"></span>
+            <input type="text" name="todo" id="todo" placeholder="Add to your list ..." class="p-2" required/>
+            <i class="fa fa-level-down"></i>
           </div>
         </form>
         <ul class="todo-list">
 
         </ul>
-        <div class="bg-light text-center p-2">
+        <div class="bg-light text-center p-2 clear">
           Clear all completed
         </div>
       </section>
