@@ -1,37 +1,17 @@
 import '@fortawesome/fontawesome-free/js/all.js';
+import TaskStore from './taskStore.js';
+import { returnIcon, addField, addBookHandler } from './domElement.js';
 import './style.css';
 
-const todos = [
-  {
-    index: 1,
-    description: 'Wash the dishes',
-    completed: false,
-  },
-  {
-    index: 2,
-    description: 'complete todo list project',
-    completed: false,
-  },
-  {
-    index: 3,
-    description: 'Attend football training',
-    completed: false,
-  },
-  {
-    index: 4,
-    description: 'Wash utensils after football practice',
-    completed: false,
-  },
-];
+const taskstore = new TaskStore();
 
-const printTodoList = () => {
-  const listContainer = document.querySelector('.todo-list');
-  todos.forEach((todo) => {
-    listContainer.innerHTML += `<li class='d-flex p-2'>
-      <input type='checkbox' id=${todo.index} />
-      <input type='text' class='desc font-normal px-1' value='${todo.description}' disabled/>
-      <span class='fa fa-ellipsis-v fa-lg'></span>
-    </li>`;
-  });
-};
-printTodoList();
+window.addEventListener('load', taskstore.printTodoList);
+
+returnIcon.addEventListener('click', () => { addBookHandler({ taskstore }); }, true);
+
+addField.addEventListener('keypress', (event) => { 
+  if(event.key === 'Enter'){
+    event.preventDefault();
+    addBookHandler({taskstore}); 
+  }
+});
