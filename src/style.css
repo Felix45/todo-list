@@ -11,6 +11,7 @@
   --light: #fafafa;
   --white: #fff;
   --dark: #000;
+  --highlighter: rgb(245, 239, 198);
 }
 
 ul,
@@ -20,6 +21,10 @@ li {
 
 .d-flex {
   display: flex;
+}
+
+.d-none {
+  display: none;
 }
 
 .flex-column {
@@ -54,21 +59,25 @@ li {
   margin-bottom: 1rem;
 }
 
-.svg-inline--fa {
+.mx-1 {
+  margin-left: 0.5rem;
+}
+
+.fa {
   cursor: pointer;
   color: var(--gray);
 }
 
-.svg-inline--fa:hover {
+.fa:hover {
   color: var(--dark);
 }
 
-.svg-inline--fa.fa-arrows-rotate,
-.svg-inline--fa.fa-arrow-turn-down {
+.fa.fa-arrows-rotate,
+.fa.fa-level-down {
   transform: rotate(90deg);
 }
 
-.svg-inline--fa.fa-arrow-turn-down {
+.fa.fa-level-down {
   position: absolute;
   right: 20px;
   top: 15px;
@@ -80,6 +89,9 @@ li {
 
 .desc {
   width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
 }
 
 .bg-light {
@@ -98,6 +110,19 @@ li {
   font-size: 16px;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
+.high-light {
+  color: var(--dark);
+  background-color: var(--highlighter);
+}
+
+.high-light .fa {
+  color: var(--dark);
+}
+
 .todo-container {
   width: 80%;
   margin-top: 5%;
@@ -107,6 +132,7 @@ li {
 
 .todo-container form input[type="text"] {
   border: none;
+  outline: 0;
   width: 100%;
   display: block;
   font-size: 18px;
@@ -125,7 +151,7 @@ li {
 
 .todo-container input[type="text"]:disabled {
   border: none;
-  background-color: var(--white);
+  background-color: transparent;
 }
 
 .todo-container input[type=checkbox]::before {
