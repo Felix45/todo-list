@@ -1,4 +1,5 @@
 import Helper from './helperFuncs.js';
+import Drag from './draggableHelper.js';
 
 class TaskStore {
   constructor() {
@@ -52,7 +53,7 @@ class TaskStore {
     const listContainer = document.querySelector('.todo-list');
     listContainer.innerHTML = '';
     this.getTasks().forEach((todo) => {
-      listContainer.innerHTML += `<li class='d-flex p-2'>
+      listContainer.innerHTML += `<li class='d-flex p-2 draggable' draggable='true'>
         <input type='checkbox' id=${todo.index} ${todo.completed ? 'checked' : ''}/>
         <input type='text' class='desc font-normal px-1 ${todo.completed ? 'line-through' : ''}' data-pos='${todo.index}' 
         value='${todo.description}' disabled/>
@@ -66,6 +67,8 @@ class TaskStore {
       Helper.deleteButtonsHandler(this);
       Helper.editElipsisHandler(this);
       Helper.editTextHandler();
+
+      Drag.dragListItem();
     }
   }
 

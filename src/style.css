@@ -172,5 +172,6 @@ li {
 }
 
 .todo-container ul li {
+  cursor: move;
   border-bottom: 1px solid var(--gray);
 }
