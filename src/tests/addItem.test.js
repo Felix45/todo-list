@@ -26,3 +26,16 @@ describe('Todo list addItem tests', () => {
     expect(list).toHaveLength(3);
   });
 });
+
+describe('Todo list removeItem tests', () => {
+  test('remove Item III', () => {
+    taskstore.removeTask(false, 3);
+    const list = document.querySelectorAll('.todo-list li');
+    expect(list).toHaveLength(2);
+  });
+  test('remove Item I', () => {
+    taskstore.removeTask(false, 1);
+    const list = document.querySelectorAll('.todo-list li');
+    expect(list).toHaveLength(1);
+  });
+});

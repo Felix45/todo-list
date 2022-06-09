@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1654721360406" clover="3.2.0">
-  <project timestamp="1654721360407" name="All files">
+<coverage generated="1654768508097" clover="3.2.0">
+  <project timestamp="1654768508098" name="All files">
     <metrics statements="83" coveredstatements="40" conditionals="23" coveredconditionals="6" methods="29" coveredmethods="15" elements="135" coveredelements="61" complexity="0" loc="83" ncloc="83" packages="1" files="2" classes="2"/>
-    <file name="helperFuncs.js" path="/home/techut/Desktop/micronauts/todo-list/src/helperFuncs.js">
+    <file name="helperFuncs.js" path="/home/ibrahim/Documents/testing-123/todo-list/src/helperFuncs.js">
       <metrics statements="43" coveredstatements="18" conditionals="2" coveredconditionals="0" methods="16" coveredmethods="9"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="3" type="stmt"/>
@@ -48,7 +48,7 @@
       <line num="62" count="0" type="stmt"/>
       <line num="63" count="0" type="stmt"/>
     </file>
-    <file name="taskStore.js" path="/home/techut/Desktop/micronauts/todo-list/src/taskStore.js">
+    <file name="taskStore.js" path="/home/ibrahim/Documents/testing-123/todo-list/src/taskStore.js">
       <metrics statements="40" coveredstatements="22" conditionals="21" coveredconditionals="6" methods="13" coveredmethods="6"/>
       <line num="5" count="1" type="cond" truecount="2" falsecount="0"/>
       <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
