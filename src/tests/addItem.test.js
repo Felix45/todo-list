@@ -4,8 +4,8 @@
 
 import TaskStore from '../taskStore.js';
 
+const taskstore = new TaskStore();
 describe('Todo list addItem tests', () => {
-  const taskstore = new TaskStore();
   document.body.innerHTML = '<div><ul class="todo-list"></ul></div>';
 
   test('add Item I', () => {
@@ -44,5 +44,3 @@ describe('Todo list removeItem tests', () => {
     expect(list).toHaveLength(0);
   });
 });
-
-

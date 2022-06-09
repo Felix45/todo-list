@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1654768508097" clover="3.2.0">
-  <project timestamp="1654768508098" name="All files">
-    <metrics statements="83" coveredstatements="40" conditionals="23" coveredconditionals="6" methods="29" coveredmethods="15" elements="135" coveredelements="61" complexity="0" loc="83" ncloc="83" packages="1" files="2" classes="2"/>
+<coverage generated="1654769851127" clover="3.2.0">
+  <project timestamp="1654769851128" name="All files">
+    <metrics statements="83" coveredstatements="48" conditionals="23" coveredconditionals="9" methods="29" coveredmethods="18" elements="135" coveredelements="75" complexity="0" loc="83" ncloc="83" packages="1" files="2" classes="2"/>
     <file name="helperFuncs.js" path="/home/ibrahim/Documents/testing-123/todo-list/src/helperFuncs.js">
       <metrics statements="43" coveredstatements="18" conditionals="2" coveredconditionals="0" methods="16" coveredmethods="9"/>
       <line num="2" count="1" type="stmt"/>
-      <line num="3" count="3" type="stmt"/>
-      <line num="4" count="3" type="stmt"/>
-      <line num="5" count="6" type="stmt"/>
+      <line num="3" count="5" type="stmt"/>
+      <line num="4" count="5" type="stmt"/>
+      <line num="5" count="9" type="stmt"/>
       <line num="6" count="0" type="stmt"/>
       <line num="7" count="0" type="stmt"/>
       <line num="8" count="0" type="stmt"/>
       <line num="13" count="1" type="stmt"/>
-      <line num="14" count="3" type="stmt"/>
-      <line num="15" count="3" type="stmt"/>
-      <line num="16" count="6" type="stmt"/>
+      <line num="14" count="5" type="stmt"/>
+      <line num="15" count="5" type="stmt"/>
+      <line num="16" count="9" type="stmt"/>
       <line num="17" count="0" type="stmt"/>
       <line num="22" count="1" type="stmt"/>
       <line num="23" count="0" type="stmt"/>
@@ -23,18 +23,18 @@
       <line num="26" count="0" type="stmt"/>
       <line num="27" count="0" type="stmt"/>
       <line num="30" count="1" type="stmt"/>
-      <line num="31" count="3" type="stmt"/>
-      <line num="33" count="6" type="stmt"/>
+      <line num="31" count="5" type="stmt"/>
+      <line num="33" count="9" type="stmt"/>
       <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="35" count="0" type="stmt"/>
       <line num="36" count="0" type="stmt"/>
-      <line num="40" count="6" type="stmt"/>
+      <line num="40" count="9" type="stmt"/>
       <line num="41" count="0" type="stmt"/>
       <line num="45" count="1" type="stmt"/>
-      <line num="46" count="3" type="stmt"/>
-      <line num="47" count="3" type="stmt"/>
-      <line num="49" count="3" type="stmt"/>
-      <line num="50" count="6" type="stmt"/>
+      <line num="46" count="5" type="stmt"/>
+      <line num="47" count="5" type="stmt"/>
+      <line num="49" count="5" type="stmt"/>
+      <line num="50" count="9" type="stmt"/>
       <line num="51" count="0" type="stmt"/>
       <line num="52" count="0" type="stmt"/>
       <line num="53" count="0" type="stmt"/>
@@ -49,19 +49,19 @@
       <line num="63" count="0" type="stmt"/>
     </file>
     <file name="taskStore.js" path="/home/ibrahim/Documents/testing-123/todo-list/src/taskStore.js">
-      <metrics statements="40" coveredstatements="22" conditionals="21" coveredconditionals="6" methods="13" coveredmethods="6"/>
+      <metrics statements="40" coveredstatements="30" conditionals="21" coveredconditionals="9" methods="13" coveredmethods="9"/>
       <line num="5" count="1" type="cond" truecount="2" falsecount="0"/>
       <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
       <line num="9" count="3" type="stmt"/>
       <line num="10" count="3" type="stmt"/>
       <line num="11" count="3" type="stmt"/>
       <line num="14" count="1" type="cond" truecount="0" falsecount="2"/>
-      <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="15" count="3" type="cond" truecount="1" falsecount="1"/>
       <line num="16" count="0" type="stmt"/>
-      <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="20" count="0" type="stmt"/>
-      <line num="21" count="0" type="stmt"/>
-      <line num="22" count="0" type="stmt"/>
+      <line num="18" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
       <line num="25" count="1" type="stmt"/>
       <line num="26" count="0" type="stmt"/>
       <line num="27" count="0" type="cond" truecount="0" falsecount="4"/>
@@ -69,27 +69,27 @@
       <line num="30" count="0" type="stmt"/>
       <line num="31" count="0" type="stmt"/>
       <line num="34" count="1" type="stmt"/>
-      <line num="35" count="0" type="stmt"/>
-      <line num="36" count="0" type="stmt"/>
-      <line num="37" count="0" type="stmt"/>
+      <line num="35" count="3" type="stmt"/>
+      <line num="36" count="3" type="stmt"/>
+      <line num="37" count="3" type="stmt"/>
       <line num="41" count="1" type="stmt"/>
       <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="43" count="0" type="stmt"/>
       <line num="45" count="0" type="stmt"/>
       <line num="47" count="0" type="stmt"/>
-      <line num="50" count="12" type="stmt"/>
+      <line num="50" count="24" type="stmt"/>
       <line num="52" count="1" type="stmt"/>
-      <line num="53" count="3" type="stmt"/>
-      <line num="54" count="3" type="stmt"/>
-      <line num="55" count="3" type="stmt"/>
-      <line num="56" count="6" type="stmt"/>
-      <line num="65" count="3" type="cond" truecount="1" falsecount="1"/>
-      <line num="66" count="3" type="stmt"/>
-      <line num="67" count="3" type="stmt"/>
-      <line num="68" count="3" type="stmt"/>
-      <line num="69" count="3" type="stmt"/>
+      <line num="53" count="6" type="stmt"/>
+      <line num="54" count="6" type="stmt"/>
+      <line num="55" count="6" type="stmt"/>
+      <line num="56" count="9" type="stmt"/>
+      <line num="65" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="66" count="5" type="stmt"/>
+      <line num="67" count="5" type="stmt"/>
+      <line num="68" count="5" type="stmt"/>
+      <line num="69" count="5" type="stmt"/>
       <line num="73" count="1" type="stmt"/>
-      <line num="74" count="3" type="stmt"/>
+      <line num="74" count="6" type="stmt"/>
     </file>
   </project>
 </coverage>
