@@ -6,7 +6,6 @@ const clearTodo = document.querySelector('.clear');
 const addBookHandler = ({ taskstore }) => {
   if (addField.value !== '') {
     taskstore.addTask(addField.value);
-    taskstore.printTodoList();
     form.reset();
   }
 };

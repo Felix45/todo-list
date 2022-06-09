@@ -7,7 +7,14 @@
     "build": "webpack",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "resetMocks": false,
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,6 +28,7 @@
   },
   "homepage": "https://felix45.github.io/todo-list/",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
@@ -28,6 +36,7 @@
     "eslint-plugin-import": "^2.26.0",
     "hint": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.1",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
@@ -41,6 +50,8 @@
     "@fortawesome/fontawesome-free": "^6.1.1",
     "file-loader": "^6.2.0",
     "gh-pages": "^4.0.0",
+    "jest-localstorage-mock": "^2.4.21",
+    "jest-environment-jsdom": "^28.1.1",
     "live-server": "^1.2.2",
     "lodash": "^4.17.21"
   }
