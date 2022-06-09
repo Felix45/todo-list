@@ -38,4 +38,11 @@ describe('Todo list removeItem tests', () => {
     const list = document.querySelectorAll('.todo-list li');
     expect(list).toHaveLength(1);
   });
+  test('remove remaining Item', () => {
+    taskstore.removeTask(false, 1);
+    const list = document.querySelectorAll('.todo-list li');
+    expect(list).toHaveLength(0);
+  });
 });
+
+
